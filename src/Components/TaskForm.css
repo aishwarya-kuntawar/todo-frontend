@@ -1,0 +1,132 @@
+/* Modal Styling */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  padding: 20px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-modal {
+  display: flex;
+  justify-content: center;
+}
+
+/* Form Group */
+.form-group {
+  max-width: 38.8rem;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #84898e;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  color: #84898e;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  /* transition: background-color 0.3s ease; */
+}
+
+.cancel-btn {
+  background-color: #eda5298f;
+  color: #b3b295;
+}
+
+.cancel-btn:hover {
+  color: gray;
+  background-color: #eda529;
+}
+
+.save-btn {
+  background-color: #4f4f4f;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #2f2f2f;
+}
+
+/* For desktop: two columns */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* Stack inputs on mobile */
+@media (max-width: 768px) {
+  .modal{
+    width: 90% !important;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .form-group {
+    max-width: 40rem !important;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label span {
+  color: red;
+}
+
+/* .modal {
+  padding: 20px;
+} */
+
+/* .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+} */

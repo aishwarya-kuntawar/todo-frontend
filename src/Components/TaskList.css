@@ -1,0 +1,138 @@
+/* Container Styling */
+.task-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Top Bar Buttons and Search */
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.buttons {
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.new-task-btn,
+.refresh-btn {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.new-task-btn {
+    background-color: #ffe7a7;
+    color: #b3b295;
+}
+
+.new-task-btn:hover {
+    background-color: #eda5298f;
+}
+
+.refresh-btn {
+    background-color: #ffe7a7;
+    color:
+        #b3b295
+}
+
+.refresh-btn:hover {
+    background-color: #eda5298f;
+}
+
+/* Search Box */
+.search-box {
+    padding: 10px 20px;
+    width: 210px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Table Styling */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.task-table th,
+.task-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+    background-color: #f8f9fa;
+    color: #7e8ba6;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.task-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.task-table td {
+    font-size: 15px;
+    color: #767676;
+}
+.name {
+    color: #63abf1 !important;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.edit-btn {
+    background-color: #eda5298f;
+    color: #b3b295;
+}
+
+.edit-btn:hover {
+    background-color: #eda529;
+}
+
+.delete-btn {
+    background-color: #eda5298f;
+    color: #b3b295;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
